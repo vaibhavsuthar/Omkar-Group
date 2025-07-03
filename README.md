@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<< HEAD              (https://omkar-group.vercel.app/) public link
 # Real Estate Animated Dashboard
 
 यह प्रोजेक्ट Next.js, Tailwind CSS और Chart.js का उपयोग करता है।
@@ -63,3 +63,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # Omkar-Group
 >>>>>>> 28a14d1fa5d648972ba669c0c44c926511e641c1
+
+https://omkar-group.vercel.app/
