@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real Estate Animated Dashboard
+
+यह प्रोजेक्ट Next.js, Tailwind CSS और Chart.js का उपयोग करता है।
+
+## कैसे चलाएं
+
+1. टर्मिनल में यह कमांड चलाएं:
+   ```
+npm run dev
+   ```
+2. ब्राउज़र में http://localhost:3000 खोलें।
+
+## डेटा कैसे जोड़ें
+- अपनी Excel/CSV फाइलें workspace में रखें।
+- डैशबोर्ड अपने-आप डेटा पढ़ेगा और चार्ट्स अपडेट करेगा।
+
+## फीचर्स
+- लाइव डेटा विज़ुअलाइजेशन
+- एनिमेटेड चार्ट्स
+- रियल-टाइम अपडेट्स
+
+---
+
+This project was bootstrapped with Next.js and is ready for real estate data visualization.
+
+---
 
 ## Getting Started
 
