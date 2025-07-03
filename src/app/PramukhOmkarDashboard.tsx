@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import { motion } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Image from "next/image";
+
 
 // Placeholder SVGs (replace with your assets if available)
 const KeySVG = () => (
@@ -50,7 +50,7 @@ const cardVariants = {
 };
 
 export default function PramukhOmkarDashboard() {
-  const particlesInit = useCallback(async (engine: any) => {
+  const particlesInit = useCallback(async (engine: unknown) => {
     await loadFull(engine);
   }, []);
 

@@ -206,8 +206,12 @@ sales.forEach((row) => {
         'isanpur': 'isanpur',
         'vejalpur': 'vejalpur',
       };
-      if (aliasMap[area]) area = aliasMap[area];
-      salesByLocation[area] = (salesByLocation[area] || 0) + parseFloat(row.sale_price as string);
+      if (aliasMap[area]) {
+        const mappedArea = aliasMap[area];
+        salesByLocation[mappedArea] = (salesByLocation[mappedArea] || 0) + parseFloat(row.sale_price as string);
+      } else {
+        salesByLocation[area] = (salesByLocation[area] || 0) + parseFloat(row.sale_price as string);
+      }
     }
   }
 });
@@ -224,7 +228,7 @@ const mapLocations = Object.entries(salesByLocation).map(([label, value]) => ({ 
           const res = await fetch(url);
           const text = await res.text();
           const data = parseCSV(text);
-          results[i] = data as any[];
+          results[i] = data as Record<string, string>[];
         } catch {
           results[i] = lastGoodData[i] || [];
           allOk = false;

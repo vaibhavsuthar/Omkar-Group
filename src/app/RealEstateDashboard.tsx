@@ -26,7 +26,7 @@ export default function RealEstateDashboard() {
   const chartRefs = useRef<Array<Chart | null>>([]);
 
   useEffect(() => {
-    let lastGoodData: Array<Array<Record<string, string | number>>> = [];
+    const lastGoodData: Array<Array<Record<string, string | number>>> = [];
     let firstLoad = true;
     async function fetchAndDraw(isFirst = false) {
       for (let idx = 0; idx < CSV_FILES.length; idx++) {
